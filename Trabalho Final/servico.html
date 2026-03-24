@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Serviços</title>
+  <link rel="stylesheet" href="css/servicos.css">
+</head>
+<nav class="navbar">
+  <div class="logo">Behelit</div>
+
+  <ul class="menu">
+    <li><a href="sobre.html">Sobre Nós</a></li>
+    <li><a href="servico.html">Serviços</a></li>
+    <li><a href="contatos.html">Contato</a></li>
+    <li><a href="index.html">Produtos</a></li>
+  </ul>
+</nav>
+<body>
+
+<h1 class="titulo">Nossos Serviços</h1>
+
+<div class="grid">
+
+  <div class="card">
+    <h2>Landing Page Básica</h2>
+    <p>Ideal para quem quer presença online rápida e direta.</p>
+    <ul>
+      <li>1 página</li>
+      <li>Design moderno</li>
+      <li>Responsivo</li>
+    </ul>
+    <button onclick="irPara('https://seusite.com/basico')">Solicitar</button>
+  </div>
+
+  <div class="card destaque">
+    <h2>Landing Page Profissional</h2>
+    <p>Perfeita para marcas que querem conversão real.</p>
+    <ul>
+      <li>Design personalizado</li>
+      <li>Seções estratégicas</li>
+      <li>Alta conversão</li>
+    </ul>
+    <button onclick="irPara('https://seusite.com/pro')">Solicitar</button>
+  </div>
+
+  <div class="card">
+    <h2>Landing Page Premium</h2>
+    <p>Máximo nível para negócios sérios.</p>
+    <ul>
+      <li>Animações</li>
+      <li>Copy otimizada</li>
+      <li>Performance alta</li>
+    </ul>
+    <button onclick="irPara('https://seusite.com/premium')">Solicitar</button>
+  </div>
+
+</div>
+
+<script>
+function irPara(url) {
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/contato.css">
+  
+</head>
+<nav class="navbar">
+  <div class="logo">Behelit</div>
+
+  <ul class="menu">
+    <li><a href="sobre.html">Sobre Nós</a></li>
+    <li><a href="servico.html">Serviços</a></li>
+    <li><a href="contatos.html">Contato</a></li>
+    <li><a href="index.html">Produtos</a></li>
+  </ul>
+</nav>
+<body>
+
+
+<h1 class="titulo">Fale com a gente</h1>
+
+<div class="container">
+
+  <form onsubmit="enviarWhats(event)">
+    <input type="text" id="nome" placeholder="Seu nome" required>
+    <input type="text" id="telefone" placeholder="Seu telefone" required>
+    <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p class="info">Ou fale direto com nossa equipe:</p>
+  <button class="whats" onclick="irWhats()">Chamar no WhatsApp</button>
+
+</div>
+
+<script>
+function enviarWhats(event) {
+  event.preventDefault();
+
+  let nome = document.getElementById("nome").value;
+  let telefone = document.getElementById("telefone").value;
+  let mensagem = document.getElementById("mensagem").value;
+
+  let texto = `Nome: ${nome}%0A Telefone: ${telefone}%0A Mensagem: ${mensagem}`;
+
+  let numero = "5551991374410"; // troca pelo teu número
+
+  window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
+}
+
+function irWhats() {
+  let numero = "5551991374410"; // troca aqui também
+  window.open(`https://wa.me/${numero}`, "_blank");
+}
+</script>
+
+</body>
+</html>
