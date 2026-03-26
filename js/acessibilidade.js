@@ -1,7 +1,7 @@
 let fala;
 
 function pegarTexto() {
-  let elementos = document.querySelectorAll("h1, h2, h3, p, li, a");
+  let elementos = document.querySelectorAll("h1, h2, h3, p, a");
   let texto = "";
 
   elementos.forEach(el => {
