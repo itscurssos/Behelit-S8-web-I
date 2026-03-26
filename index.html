@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<nav class="navbar" data-no-read>
+  <div class="logo">Behelit</div>
+
+  <ul class="menu">
+    <li><a href="sobre.html">Sobre Nós</a></li>
+    <li><a href="servico.html">Serviços</a></li>
+    <li><a href="contatos.html">Contato</a></li>
+    <li><a href="index.html">Produtos</a></li>
+  </ul>
+</nav>
+
+<div class="acessibilidade">
+  <button onclick="lerPagina()">🔊 Ler página</button>
+  <button onclick="pausar()">⏸</button>
+  <button onclick="parar()">⏹</button>
+</div>
+
+<h1 class="titulo">BEHELIT</h1>
+
+<p class="descricao-loja">
+Camisetas pensadas para quem vive o universo geek de verdade.
+Qualidade, estilo e identidade em cada peça.
+</p>
+
+<div class="grid">
+
+  <div class="card">
+    <img src="img/camisa1.jpg" alt="Camisa Gohan">
+    <h2>Camiseta Preta Gohan</h2>
+    <p class="desc">Estampa marcante com um dos personagens mais icônicos de Dragon Ball. Ideal para quem curte atitude e presença.</p>
+    <p class="preco">R$89,90</p>
+    <button onclick="irPara('https:behelit.com.br/produtos/camiseta-preta-gohan-cgsom/')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/camisa2.jpg" alt="Camisa Frieren">
+    <h2>Camiseta Preta Frieren</h2>
+    <p class="desc">Design minimalista e elegante inspirado em Frieren. Perfeita pra quem prefere um estilo mais sutil e sofisticado.</p>
+    <p class="preco">R$89,90</p>
+    <button onclick="irPara('https:behelit.com.br/produtos/camiseta-preta-frieren-1febv/')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="img/camisa3.jpg" alt="Camisa Athena">
+    <h2>Camiseta Athena Exclamation</h2>
+    <p class="desc">Arte intensa e cheia de energia. Pra quem quer chamar atenção e carregar um visual forte.</p>
+    <p class="preco">R$89,90</p>
+    <button onclick="irPara('https:behelit.com.br/produtos/camiseta-preta-athena-exclamation-zmjz2/')">Comprar</button>
+  </div>
+
+</div>
+
+<section class="confianca">
+  <h2>É seguro comprar na Behelit?</h2>
+
+  <p>
+    É uma pergunta muito válida. Esperamos merecer e honrar a sua confiança.
+  </p>
+
+  <p>
+    Para isso, disponibilizamos atendimento via WhatsApp <strong>(21) 99997-3450</strong>,
+    com suporte humanizado e rápido, para que você acompanhe seu pedido com tranquilidade.
+  </p>
+
+  <p>
+    Nosso tempo de envio pode variar de <strong>1 a 14 dias</strong>, dependendo da disponibilidade
+    em estoque e da fila de produção.
+  </p>
+
+  <p>
+    Respondemos qualquer dúvida para que você se sinta seguro ao investir.
+    Estamos prontos para nos tornar sua nova loja favorita.
+  </p>
+</section>
+
+<a href="https://behelit.com.br" target="_blank" class="botao-site">
+  Ir para o site oficial
+</a>
+
+<script>
+function irPara(url) {
+  window.location.href = url;
+}
+</script>
+
+<script src="js/acessibilidade.js"></script>
+
+</body>
+</html>

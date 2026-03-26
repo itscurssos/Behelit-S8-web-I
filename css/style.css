@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #000000;
+  font-family: Arial, sans-serif;
+  color: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff2a2a;
+}
+
+.logo {
+  color: #fe2626;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #ff2a2a;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 64px;
+  color: #ff2a2a;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.behelit {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.behelit h1 {
+  font-size: 56px;
+  color: #fc2b2b;
+  margin-bottom: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+.behelit p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cecece;
+  margin-bottom: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.destaque {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+
+
+
+.acessibilidade {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.acessibilidade button {
+  background: #111;
+  color: white;
+  border: 1px solid #ff2a2a;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.acessibilidade button:hover {
+  background: #ff2a2a;
+}
