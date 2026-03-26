@@ -4,22 +4,31 @@
   <meta charset="UTF-8">
   <title>Contato</title>
   <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" href="favicon.ico">
+
   
 </head>
-<nav class="navbar">
+
+<nav class="navbar" data-no-read>
   <div class="logo">Behelit</div>
 
   <ul class="menu">
     <li><a href="sobre.html">Sobre Nós</a></li>
     <li><a href="servico.html">Serviços</a></li>
     <li><a href="contatos.html">Contato</a></li>
-    <li><a href="index.html">Produtos</a></li>
+    <li><a href="produto.html">Produtos</a></li>
   </ul>
 </nav>
 <body>
 
 
 <h1 class="titulo">Fale com a gente</h1>
+
+<div class="acessibilidade">
+  <button onclick="lerPagina()">🔊 Ler página</button>
+  <button onclick="pausar()">⏸</button>
+  <button onclick="parar()">⏹</button>
+</div>
 
 <div class="container">
 
@@ -46,16 +55,18 @@ function enviarWhats(event) {
 
   let texto = `Nome: ${nome}%0A Telefone: ${telefone}%0A Mensagem: ${mensagem}`;
 
-  let numero = "5551991374410"; // troca pelo teu número
+  let numero = "5551991374410"; 
 
   window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
 }
 
 function irWhats() {
-  let numero = "5551991374410"; // troca aqui também
+  let numero = "5551991374410";
   window.open(`https://wa.me/${numero}`, "_blank");
 }
 </script>
+
+<script src="js/acessibilidade.js"></script>
 
 </body>
 </html>

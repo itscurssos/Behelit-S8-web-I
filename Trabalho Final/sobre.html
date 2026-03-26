@@ -2,33 +2,56 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Behelit</title>
+  <title>Sobre Nós</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
-<nav class="navbar">
+
+<body>
+  <div class="acessibilidade">
+  <button onclick="lerPagina()">🔊 Ler página</button>
+  <button onclick="pausar()">⏸</button>
+  <button onclick="parar()">⏹</button>
+</div>
+
+<nav class="navbar" data-no-read>
   <div class="logo">Behelit</div>
 
   <ul class="menu">
     <li><a href="sobre.html">Sobre Nós</a></li>
     <li><a href="servico.html">Serviços</a></li>
     <li><a href="contatos.html">Contato</a></li>
-    <li><a href="index.html">Produtos</a></li>
+    <li><a href="produto.html">Produtos</a></li>
   </ul>
 </nav>
-<body>
 
-<div class="content">
+<main class="behelit">
+
   <h1>Behelit Pages</h1>
-  <p>
-Como uma chave de acesso a mundos distintos, 
-a Behelit Pages nasceu para divulgar páginas através
-do serviço de Landing Pages. Para se aprofundar ainda 
-mais em conteúdos focados para público de gosto
-geek e de acadêmia, para que assim pessoas 
-possam conhecer mais de produtos semelhantes.
-  </p>
-</div>
 
+  <p class="destaque">
+    A Behelit Pages não é só sobre criar sites. É sobre te levar a outro mundo.
+  </p>
+
+  <p>
+    Nascemos com um objetivo simples: transformar ideias em páginas que realmente chamam atenção.
+    Em um mundo onde tudo passa rápido, uma landing page precisa fazer mais do que existir,
+    ela precisa impactar.
+  </p>
+
+  <p>
+    Nosso foco está em marcas com identidade forte, principalmente no universo geek e academia,
+    criando experiências visuais que conectam diretamente com o público certo.
+  </p>
+
+  <p>
+    Cada projeto é pensado para converter, destacar e representar exatamente o que a marca quer ser.
+    Sem enrolação, sem excesso, só o que funciona.
+  </p>
+
+</main>
+
+<script src="js/acessibilidade.js"></script>
 
 </body>
 </html>

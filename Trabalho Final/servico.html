@@ -4,18 +4,26 @@
   <meta charset="UTF-8">
   <title>Serviços</title>
   <link rel="stylesheet" href="css/servicos.css">
+    <link rel="icon" href="favicon.ico">
+
 </head>
-<nav class="navbar">
+<nav class="navbar" data-no-read>
   <div class="logo">Behelit</div>
 
   <ul class="menu">
     <li><a href="sobre.html">Sobre Nós</a></li>
     <li><a href="servico.html">Serviços</a></li>
     <li><a href="contatos.html">Contato</a></li>
-    <li><a href="index.html">Produtos</a></li>
+    <li><a href="produto.html">Produtos</a></li>
   </ul>
 </nav>
 <body>
+
+  <div class="acessibilidade">
+  <button onclick="lerPagina()">🔊 Ler página</button>
+  <button onclick="pausar()">⏸</button>
+  <button onclick="parar()">⏹</button>
+</div>
 
 <h1 class="titulo">Nossos Serviços</h1>
 
@@ -29,7 +37,7 @@
       <li>Design moderno</li>
       <li>Responsivo</li>
     </ul>
-    <button onclick="irPara('https://seusite.com/basico')">Solicitar</button>
+    <button onclick="irPara('https:web.whatsapp.com')">Solicitar</button>
   </div>
 
   <div class="card destaque">
@@ -40,7 +48,7 @@
       <li>Seções estratégicas</li>
       <li>Alta conversão</li>
     </ul>
-    <button onclick="irPara('https://seusite.com/pro')">Solicitar</button>
+    <button onclick="irPara('https:web.whatsapp.com')">Solicitar</button>
   </div>
 
   <div class="card">
@@ -51,7 +59,7 @@
       <li>Copy otimizada</li>
       <li>Performance alta</li>
     </ul>
-    <button onclick="irPara('https://seusite.com/premium')">Solicitar</button>
+    <button onclick="irPara('https:web.whatsapp.com')">Solicitar</button>
   </div>
 
 </div>
@@ -61,6 +69,8 @@ function irPara(url) {
   window.location.href = url;
 }
 </script>
+
+<script src="js/acessibilidade.js"></script>
 
 </body>
 </html>
