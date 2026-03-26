@@ -22,14 +22,17 @@
 <body>
 
 
-<h1 class="titulo">Fale com a gente</h1>
+
 
 <div class="acessibilidade">
   <button onclick="lerPagina()">🔊 Ler página</button>
   <button onclick="pausar()">⏸</button>
   <button onclick="parar()">⏹</button>
 </div>
+<div class="conteudo">
+  <h1 class="titulo">Fale com a gente</h1>
 
+ 
 <div class="container">
 
   <form onsubmit="enviarWhats(event)">
@@ -44,7 +47,7 @@
   <button class="whats" onclick="irWhats()">Chamar no WhatsApp</button>
 
 </div>
-
+ </div>
 <script>
 function enviarWhats(event) {
   event.preventDefault();
